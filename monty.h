@@ -74,5 +74,5 @@ void rotate_stack_right(stack_t **head, __attribute__((unused)) unsigned int cou
 void add_node_to_stack_top(stack_t **head, int n);
 void add_node_to_stack_end(stack_t **head, int n);
 void set_stack_mode(stack_t **head, unsigned int counter);
-void set_stack_mode(stack_t **head, unsigned int counter);
+void print_stack_top(stack_t **head, unsigned int counter);
 #endif

@@ -101,3 +101,16 @@ void swap_stack(stack_t **head, unsigned int counter)
 	current_head->n = current_head->next->n;
 	current_head->next->n = result;
 }
+
+/**
+ * print_stack_top - prints the top of the stack
+ * @head: stack head
+ * @count: line_number
+ * Return: no return
+*/
+void print_stack_top(stack_t **head, unsigned int count)
+{
+	(void)head;
+	(void)count;
+	bus.lifi = 0;
+}

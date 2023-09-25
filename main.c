@@ -64,7 +64,7 @@ int execute_cmd(char *file_content, stack_t **stack, unsigned int count,
 		{"nop", do_nothing}, {"sub", stack_substract}, {"div", stack_divide},
 		{"mul", stack_multiply}, {"mod", stack_modulus}, {"pchar", print_char},
 		{"pstr", print_str}, {"rotl", rotate_stack_left}, {"rotr", rotate_stack_right},
-		{"queue", set_stack_mode}, {"stack", set_stack_mode}, {NULL, NULL}
+		{"queue", set_stack_mode}, {"stack", print_stack_top}, {NULL, NULL}
 	};
 	unsigned int j = 0;
 	char *token;
