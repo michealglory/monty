@@ -61,15 +61,3 @@ void rotate_stack_right(stack_t **head,
 	(*head)->prev = cp;
 	(*head) = cp;
 }
-
-/**
- * set_stack_mode - Set the stack mode to stack (LIFO)
- * @head: Double pointer to the head of the stack (unused)
- * @count: Line number in the bytecode file (unused)
- */
-void set_stack_mode(stack_t **head, unsigned int count)
-{
-	(void)head;
-	(void)count;
-	bus.lifi = 0;
-}

@@ -69,7 +69,7 @@ int execute_cmd(char *file_content, stack_t **stack, unsigned int count,
 	unsigned int j = 0;
 	char *token;
 
-	token = strtok(file_content, " \n\t"); /* Tokenize the bytecode line */
+	token = strtok(file_content, " \n\t"); /* Tokenize the bytecode */
 	if (token && token[0] == '#')
 	{
 		return (0);

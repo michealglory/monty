@@ -106,7 +106,7 @@ void swap_stack(stack_t **head, unsigned int counter)
  * print_stack_top - prints the top of the stack
  * @head: stack head
  * @count: line_number
- * Return: no return
+ * Return: no return value
 */
 void print_stack_top(stack_t **head, unsigned int count)
 {
