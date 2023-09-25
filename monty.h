@@ -58,7 +58,8 @@ char  *clean_line(char *content);
 void push_to_stack(stack_t **head, unsigned int number);
 void prints_all(stack_t **head, unsigned int number);
 void print_int(stack_t **head, unsigned int number);
-int execute_cmd(char *content, stack_t **head, unsigned int count, FILE *file_ptr);
+int execute_cmd(char *content, stack_t **head, unsigned int count,
+FILE *file_ptr);
 void free_stack(stack_t *head);
 void remove_from_stack_top(stack_t **head, unsigned int count);
 void swap_stack(stack_t **head, unsigned int count);
@@ -71,7 +72,8 @@ void stack_modulus(stack_t **head, unsigned int count);
 void print_char(stack_t **head, unsigned int count);
 void print_str(stack_t **head, unsigned int count);
 void rotate_stack_left(stack_t **head, unsigned int count);
-void rotate_stack_right(stack_t **head, __attribute__((unused)) unsigned int count);
+void rotate_stack_right(stack_t **head,
+__attribute__((unused)) unsigned int count);
 void add_node_to_stack_top(stack_t **head, int n);
 void add_node_to_stack_end(stack_t **head, int n);
 void set_stack_mode(stack_t **head, unsigned int count);
