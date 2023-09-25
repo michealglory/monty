@@ -13,7 +13,7 @@ void do_nothing(stack_t **head, unsigned int count)
 /**
  * remove_from_stack_top - Remove the top element of the stack
  * @head: Double pointer to the head of the stack
- * @counter: Line number in the bytecode file
+ * @count: Line number in the bytecode file
  */
 void remove_from_stack_top(stack_t **head, unsigned int count)
 {
