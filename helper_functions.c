@@ -16,7 +16,8 @@ void set_stack_mode(stack_t **head, unsigned int count)
  * @head: Double pointer to the head of the stack
  * @count: Line number in the bytecode file (unused)
  */
-void rotate_stack_left(stack_t **head,  __attribute__((unused)) unsigned int count)
+void rotate_stack_left(stack_t **head,
+		__attribute__((unused)) unsigned int count)
 {
 	stack_t *node_tmp = *head, *node_current;
 
@@ -41,7 +42,7 @@ void rotate_stack_left(stack_t **head,  __attribute__((unused)) unsigned int cou
  * @head: Double pointer to the head of the stack
  * @count: Line number in the bytecode file (unused)
  */
-void rotate_stack_right(stack_t **head, 
+void rotate_stack_right(stack_t **head,
 						__attribute__((unused)) unsigned int count)
 {
 	stack_t *cp;
