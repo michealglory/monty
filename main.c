@@ -60,16 +60,18 @@ int execute_cmd(char *file_content, stack_t **stack, unsigned int count,
 {
 	instruction_t operations[] = {
 		{"push", push_to_stack}, {"pall", prints_all}, {"pint", print_int},
-		{"pop", remove_from_stack_top}, {"swap", swap_stack}, {"add", stack_add},
+		{"pop", remove_from_stack_top}, {"swap", swap_stack},
+		{"add", stack_add},
 		{"nop", do_nothing}, {"sub", stack_substract}, {"div", stack_divide},
 		{"mul", stack_multiply}, {"mod", stack_modulus}, {"pchar", print_char},
-		{"pstr", print_str}, {"rotl", rotate_stack_left}, {"rotr", rotate_stack_right},
+		{"pstr", print_str}, {"rotl", rotate_stack_left},
+		{"rotr", rotate_stack_right},
 		{"queue", set_stack_mode}, {"stack", print_stack_top}, {NULL, NULL}
 	};
 	unsigned int j = 0;
 	char *token;
 
-	token = strtok(file_content, " \n\t"); /* Tokenize the bytecode */
+	token = strtok(file_content, " \n\t"); /* Tokenize the bytecode line */
 	if (token && token[0] == '#')
 	{
 		return (0);
@@ -123,9 +125,9 @@ void add_node_to_stack_top(stack_t **head, int n)
 	node_new = malloc(sizeof(stack_t));
 
 	if (node_new == NULL)
-	{ 
+	{
 		printf("Error\n");
-		exit(0); 
+		exit(0);
 	}
 	if (temp_node)
 	{
